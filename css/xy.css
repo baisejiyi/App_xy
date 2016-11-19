@@ -1,0 +1,547 @@
+/*第一个页面*/
+.page1{
+	background-image: url("../img/bg1.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*按钮*/
+.goBtn{
+	width: 348px;
+	height: 96px;
+	background-color: #ef5412;
+	border: 4px #FFFFFF solid;
+	border-radius: 18px;
+	position: absolute;
+	top: 83.3%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	color: #FFFFFF;
+	font-size: 5.2rem;
+	text-align: center;
+	line-height: 96px;
+}
+.goBtnA{
+	background-color: #a33b0d;
+}
+
+/*第二个页面*/
+.page2{
+	background-image: url("../img/bg2.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+/*选择人物*/
+.swiper-container2{
+	position: absolute;
+	top: 7%;
+	left: 0px;
+	width: 100%;
+	height: 50%;
+	/*overflow: hidden;*/
+}
+.select-per{
+	width: 500%;
+	height: 514px;
+	position: absolute;
+	left: 0px;
+	bottom: 3%;
+	overflow: hidden;
+}
+.select-per li{
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+.select-per img{
+	height: 100%;
+}
+.hxImg{
+	margin-left: 120px;
+}
+/*选择头像*/
+.select-heads{
+	width: 100%;
+	position: absolute;
+	top: 64%;
+	left: 0px;
+	text-align: center;
+}
+.select-heads li{
+	display: inline-block;
+	margin: 0px 8px;
+}
+.heads{
+	background-color: #FFFFFF;
+	border: 2px #c9c9c9 solid;
+	border-radius: 13px;
+}
+.headsActive{
+	border: 2px #ea5413 solid;
+}
+.select-heads p{
+	font-size: 2.4rem;
+	color: #9e9685;
+}
+.select-heads .active-name{
+	color: #ea5413;
+}
+/*选定人物按钮*/
+.selectBtn{
+	width: 348px;
+	height: 96px;
+	background-color: #ef5412;
+	border: 4px #FFFFFF solid;
+	border-radius: 18px;
+	position: absolute;
+	top: 82%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	color: #FFFFFF;
+	font-size: 5.2rem;
+	text-align: center;
+	line-height: 96px;
+}
+.selectBtnA{
+	background-color: #a33b0d;
+}
+
+/*第三个页面*/
+.page3{
+	background-image: url("../img/bg3.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.page3Hidden{
+	opacity: 0;
+}
+/*分数*/
+.scoreSum{
+	overflow: hidden;
+	position: absolute;
+	top: 40px;
+	left: 30px;
+}
+.scoreSumNum{
+	float: left;
+	width: 40px;
+	height: 50px;
+}
+.scoreSumNum img{
+	width: 100%;
+	height: 100%;
+}
+/*分数图标*/
+.scoreImg{
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+.scoreImg img{
+	width: 100%;
+}
+/*单个分数*/
+.score{
+	overflow: hidden;
+	position: absolute;
+	display: none;
+}
+.scoreNum{
+	float: left;
+	width: 30px;
+	height: 40px;
+}
+.scoreNum img{
+	width: 100%;
+	height: 100%;
+}
+/*倒计时*/
+.times{
+	position: absolute;
+	top: 200px;
+	left: 30px;
+}
+.timesPic{
+	float: left;
+	font-size: 7rem;
+	font-family: sans-serif;
+}
+.timesPic img{
+	width: 100%;
+}
+/*人物*/
+.person{
+	position: absolute;
+	top: 30px;
+	left: 260px;
+}
+.personImg{
+	width: 80%;
+}
+/*吸把*/
+.stick{
+	position: absolute;
+	top: 150px;
+	left: 230px;
+	transform-origin: 50% 60px;
+	-webkit-transform-origin: 50% 60px;
+}
+.stick img{
+	display: block;
+}
+.stickBody{
+	width: 10px;
+	height: 170px;
+	background-color: #f2c27f;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	transition-name: height;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	-webkit-transition-name: height;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+}
+.stickChange{
+	height: 1000px;
+	transition-name: height;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	-webkit-transition-name: height;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: linear;
+}
+/*.stickHead{
+}*/
+.getArticle{
+	position: absolute;
+	bottom: 0px;
+}
+.getArticle img{
+	width: 80%;
+}
+
+/*云*/
+.cloud{
+	position: absolute;
+	text-align: center;
+}
+.cloud .article{
+	width: 47%;
+	margin-top: -20px;
+}
+.cloud1{
+	width: 197px;
+	height: 89px;
+	/*top: 500px;*/
+	bottom: 490px;
+}
+.cloud2{
+	width: 181px;
+	height: 87px;
+	/*top: 600px;*/
+	bottom: 420px;
+}
+.cloud2 img{
+	/*width: 70%;*/
+	margin-top: -40px;
+}
+.cloud3{
+	width: 171px;
+	height: 93px;
+	/*top: 680px;*/
+	bottom: 360px;
+}
+.cloud3 img{
+	/*width: 70%;*/
+	margin-top: -30px;
+}
+.cloud4{
+	width: 141px;
+	height: 69px;
+	/*top: 820px;*/
+	bottom: 270px;
+}
+.cloud4 img{
+	/*width: 70%;*/
+	margin-top: -40px;
+}
+.cloud5{
+	width: 200px;
+	height: 85px;
+	/*top: 870px;*/
+	bottom: 200px;
+}
+.cloud5 .article{
+	width: 30%;
+	margin-top: -50px;
+}
+.cloud6{
+	width: 189px;
+	height: 80px;
+	/*top: 960px;*/
+	bottom: 120px;
+}
+.cloud6 img{
+	/*width: 60%;*/
+	margin-top: -40px;
+}
+.cloud7{
+	width: 147px;
+	height: 62px;
+	/*top: 1050px;*/
+	bottom: 60px;
+}
+.cloud7 .article{
+	/*width: 60%;*/
+	position: absolute;
+	top: 10px;
+	left: 40px;
+}
+.light{
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: -80px;
+}
+
+.bg_start{
+	width: 100%;
+	height: 100%;
+	background-color: #777;
+	position: absolute;
+	left: 0px;
+	opacity: 0.9;
+}
+.clickHere{
+	width: 309px;
+	height: 336px;
+	background-image: url("../img/clickHere.png");
+	position: absolute;
+	right: 170px;
+	bottom: 142px;
+	opacity: 0.9;
+}
+.startBtn{
+	width: 160px;
+	height: 160px;
+	background-image: url("../img/startBtn.png");
+	position: absolute;
+	right: 30px;
+	bottom: 64px;
+}
+.startBtnA{
+	background-image: url("../img/startBtnA.png");
+}
+/*最后得分*/
+.scoreEndBox{
+	width: 100%;
+	height: 360px;
+	background-image: url("../img/scoreEnd.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	display: none;
+}
+.showScoreBox{
+	display: block;
+}
+/*最后总分数*/
+.scoreEnd{
+	overflow: hidden;
+	position: absolute;
+	top: 50px;
+	right: 15%;
+}
+.scoreFont{
+	float: left;
+	color: #fdf003;
+	font-size: 6rem;
+	line-height: 60px;
+	font-weight: bolder;
+}
+.asBtn{
+	width: 174px;
+	height: 56px;
+	border: 3px #e95412 solid;
+	border-radius: 12px;
+	position: absolute;
+	bottom: 48px;
+}
+/*再玩一次*/
+.again{
+	left: 127px;
+}
+/*查看排名*/
+.showRank{
+	right: 125px;
+}
+
+/*第四个页面*/
+.page4{
+	background-image: url("../img/bg4.png");
+	background-size: 100% 80%;
+	background-repeat: no-repeat;
+}
+/*前五名玩家排行*/
+.player{
+	width: 100%;
+	height: 55%;
+	position: absolute;
+	top: 25%;
+	left: 0px;
+}
+.player li{
+	width: 86%;
+	height: 20%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.player div{
+	float: left;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: "微软雅黑",sans-serif;
+	font-size: 3.4rem;
+	line-height: 3.6;
+}
+/*排名*/
+.rank{
+	width: 10%;
+	text-align: center;
+}
+/*头像*/
+.headImg{
+	width: 20%;  
+}
+.headImg img{
+	width: 90%;
+	vertical-align: middle;
+}
+/*玩家名字*/
+.playerName{
+	width: 50%;
+}
+/*玩家总分数*/
+.scoreSumEnd{
+	width: 20%;
+	text-align: right;
+}
+
+/*分享说明*/
+.share{
+	width: 292px;
+	height: 378px;
+	background-image: url("../img/分享说明.png");
+	position: absolute;
+	top: 0px;
+	right: 50px;
+}
+.shareHidden{
+	display: none;
+}
+/*按钮*/
+.abBtn{
+	width: 240px;
+	height: 78px;
+	border: 3px #e95412 solid;
+	border-radius: 14px;
+	position: absolute;
+	bottom: 80px;
+	text-align: center;
+	line-height: 78px;
+	font-size: 3.4rem;
+	
+}
+/*返回游戏*/
+.backGame{
+	background-color: #e95412;
+	left: 50px;
+	color: #fff;
+}
+/*领取奖品*/
+.award{
+	background-color: #fff;
+	right: 50px;
+	color: #e95412;
+}
+
+/*第五个页面*/
+.page5{
+	background-image: url("../img/bg5.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/*按钮*/
+.sgBtn{
+	width: 240px;
+	height: 78px;
+	border: 3px #e95412 solid;
+	border-radius: 14px;
+	position: absolute;
+	top: 700px;
+	text-align: center;
+	line-height: 78px;
+	font-size: 3.4rem;
+	
+}
+/*返回游戏*/
+.showCredit{
+	left: 50px;
+	background-color: #fff;
+	color: #e95412;
+}
+/*领取奖品*/
+.goShop{
+	right: 50px;
+	background-color: #e95412;
+	color: #fff;
+}
+
+.rotateS{
+	animation-name: rotateS;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name: rotateS;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+/*关闭旋转*/
+.rotateS_stop{
+	animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+/*自己添加的动画*/
+@keyframes rotateS{
+	from{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}
+@-webkit-keyframes rotateS{
+	from{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	}
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>小样来挑战</title>
+	    <!-- Link Swiper's CSS -->
+	    <link rel="stylesheet" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/xy.css"/>
+	    <!-- Demo styles -->
+	    <style>
+		    *{
+				margin: 0px;
+				padding: 0px;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+		    html, body {
+		        position: relative;
+		        height: 100%;
+		        font-size: 62.5%;
+		        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		    }
+		    .swiper-container {
+		        width: 100%;
+		        height: 100%;
+		    }
+		    .swiper-slide {
+		   	 	position: relative;
+		        /* Center slide text vertically */
+		        display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: -webkit-flex;
+		        display: flex;
+		        -webkit-box-pack: center;
+		        -ms-flex-pack: center;
+		        -webkit-justify-content: center;
+		        justify-content: center;
+		        -webkit-box-align: center;
+		        -ms-flex-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
+		    }
+	    </style>
+	</head>
+	<body>
+	    <!-- Swiper -->
+	    <div class="swiper-container">
+	        <div class="swiper-wrapper">
+	        		<!--第一个页面：进入游戏-->
+	            <div class="swiper-slide page1">
+	            		<div class="goBtn">进去看看</div>
+	            </div>
+	            <!--第二个页面：选择人物-->
+	            <div class="swiper-slide page2">
+	            		<!--所选中的人物-->
+	            		<div class="swiper-container2">
+	            			<ul class="swiper-wrapper swiper-no-swiping select-per">
+		            			<li><img src="img/人物选择－白客.png"/></li>
+		            			<li><img class="hxImg" src="img/人物选择－韩雪.png"/></li>
+		            			<li><img src="img/人物选择－明道.png"/></li>
+		            			<li><img src="img/人物选择-刘语熙.png"/></li>
+		            			<li><img src="img/人物选择-徐开骋.png"/></li>
+		            		</ul>
+		            		
+		            	</div>
+		            	<ul class="select-heads">
+	            			<li>
+	            				<div class="heads headsActive">
+	            					<img src="img/头像－白客.png"/>
+	            				</div>
+	            				<p class="active-name">白 客</p>
+	            			</li>
+	            			<li>
+	            				<div class="heads">
+	            					<img src="img/头像－韩雪.png"/>
+	            				</div>
+	            				<p>韩 雪</p>
+	            			</li>
+	            			<li>
+	            				<div class="heads">
+	            					<img src="img/头像－明道.png"/>
+	            				</div>
+	            				<p>明 道</p>
+	            			</li>
+	            			<li>
+	            				<div class="heads">
+	            					<img src="img/头像－刘语熙.png"/>
+	            				</div>
+	            				<p>刘语熙</p>
+	            			</li>
+	            			<li>
+	            				<div class="heads">
+	            					<img src="img/头像－徐开骋.png"/>
+	            				</div>
+	            				<p>徐开骋</p>
+	            			</li>
+	            		</ul>
+					<!--选定人物按钮-->            		
+					<div class="selectBtn">选定人物</div>
+	            </div>
+	            <!--第三个页面：游戏-->
+	            <div class="swiper-slide page3">
+	           	 	<!--分数图标-->
+					<div class="scoreImg"><img src="img/SCORE.png"/></div>
+	            		<!--分数-->
+	            		<div class="scoreSum">
+	            			<div class="scoreSumNum"><img src="img/0.png"/></div>
+						<div class="scoreSumNum"><img src="img/0.png"/></div>
+						<div class="scoreSumNum"><img src="img/0.png"/></div>
+						<div class="scoreSumNum"><img src="img/0.png"/></div>
+	            		</div>
+					<!--倒计时-->
+					<div class="times">
+						<!--<div class="timesPic"><img src="img/time3.png"/></div>
+						<div class="timesPic"><img src="img/time0.png"/></div>
+						<div class="timesPic">:</div>
+						<div class="timesPic"><img src="img/time0.png"/></div>
+						<div class="timesPic"><img src="img/time0.png"/></div>-->
+						<div class="timesPic">3</div>
+						<div class="timesPic">0</div>
+						<p class="timesPic">:</p>
+						<div class="timesPic">0</div>
+						<div class="timesPic">0</div>
+					</div>
+	            		<!--人物-->
+	            		<div class="person"><img class="personImg" src="img/人物白客.png"/></div>
+	            		<!--吸把-->
+	            		<div class="stick rotateS">
+	            			<!--木棍-->
+	            			<div class="stickBody"></div>
+	            			<!--吸把头-->
+	            			<img class="stickHead" src="img/stickHead.png"/>
+	            			<!--获取物品位置-->
+	            			<div class="getArticle"><img src=""/></div>
+	            		</div>
+	            		<div class="cloud cloudL cloud1"><img class="article" src="img/蛋糕2.png"/></div>
+	            		<div class="cloud cloudR cloud2"><img class="article" src="img/sugar2.png"/></div>
+	            		<div class="cloud cloudL cloud3"><img class="article" src="img/checkcake3.png"/></div>
+	            		<div class="cloud cloudL cloud4"><img class="article" src="img/sugar1.png"/></div>
+	            		<div class="cloud cloudR cloud5"><img class="article" src="img/乳酸.png"/></div>
+	            		<div class="cloud cloudR cloud6"><img class="article" src="img/sugar3.png"/></div>
+	            		<div class="cloud cloudL cloud7"><img class="light" src="img/发光.png"/><img class="article" src="img/宝箱.png"/></div>
+					<!--单个分数-->
+					<div class="score">
+						<div class="scoreNum"><img src="img/0.png"/></div>
+						<div class="scoreNum"><img src="img/0.png"/></div>
+						<div class="scoreNum"><img src="img/0.png"/></div>
+					</div>
+					<!--游戏开始点击按钮-->
+					<div class="startBtn"></div>
+					<!--黑色背景-->
+					<div class="bg_start"></div>
+					<!--提示-->
+					<div class="clickHere"></div>
+					<!--最后得分方框-->
+					<div class="scoreEndBox">
+						<!--最后分数-->
+						<div class="scoreEnd">
+							<div class="scoreSumNum"><img src="img/0.png"/></div>
+							<div class="scoreSumNum"><img src="img/0.png"/></div>
+							<div class="scoreSumNum"><img src="img/0.png"/></div>
+							<div class="scoreSumNum"><img src="img/0.png"/></div>
+							<div class="scoreFont">分</div>
+						</div>
+						<!--再玩一次-->
+						<div class="asBtn again"></div>
+						<!--查看排名-->
+						<div class="asBtn showRank"></div>
+					</div>
+	            </div>
+	            <!--第四个页面：-->
+	            <div class="swiper-slide page4">
+	            		<!--前五名玩家信息-->
+	            		<ul class="player">
+	            			<li>
+	            				<div class="rank"></div>
+	            				<div class="headImg"><img src=""/></div>
+	            				<div class="playerName"></div>
+	            				<div class="scoreSumEnd"></div>
+	            			</li>
+	            			<li>
+	            				<div class="rank"></div>
+	            				<div class="headImg"><img src=""/></div>
+	            				<div class="playerName"></div>
+	            				<div class="scoreSumEnd"></div>
+	            			</li>
+	            			<li>
+	            				<div class="rank"></div>
+	            				<div class="headImg"><img src=""/></div>
+	            				<div class="playerName"></div>
+	            				<div class="scoreSumEnd"></div>
+	            			</li>
+	            			<li>
+	            				<div class="rank"></div>
+	            				<div class="headImg"><img src=""/></div>
+	            				<div class="playerName"></div>
+	            				<div class="scoreSumEnd"></div>
+	            			</li>
+	            			<li>
+	            				<div class="rank"></div>
+	            				<div class="headImg"><img src=""/></div>
+	            				<div class="playerName"></div>
+	            				<div class="scoreSumEnd"></div>
+	            			</li>
+	            		</ul>
+	            		<!--分享提示-->
+	            		<div class="share"></div>
+	            		<!--返回游戏-->
+	            		<div class="abBtn backGame">返回游戏</div>
+	            		<!--领取奖品-->
+	            		<div class="abBtn award">领取奖品</div>
+	            </div>
+	            <!--第五个页面：-->
+	            <div class="swiper-slide page5">
+	           	 	<!--查看积分-->
+	            		<div class="sgBtn showCredit">查看积分</div>
+	            		<!--去小样商城-->
+	            		<div class="sgBtn goShop">去小样商城</div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<!-- jquery JS -->
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Swiper JS -->
+    <script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--myJS-->
+	<script src="js/xy.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+		if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+			var version = parseFloat(RegExp.$1);
+			if (version > 2.3) {
+				var phoneScale = parseInt(window.screen.width) / 640;
+				document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+			} else {
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+		} else {
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+	</script>
+</html>
